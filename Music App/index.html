@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Devadharshini task4</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="album-art" id="albumArt">🎵</div>
+        
+        <div class="song-info">
+            <h3 id="songTitle">Demo Song</h3>
+            <p id="artistName">Demo Artist</p>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="time-info">
+                <span id="currentTime">0:00</span>
+                <span id="duration">3:45</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn" id="prevBtn">⏮️</button>
+            <button class="control-btn play-btn" id="playBtn">▶️</button>
+            <button class="control-btn" id="nextBtn">⏭️</button>
+        </div>
+        
+        <div class="volume-container">
+            <span>🔊</span>
+            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
+            <span id="volumeDisplay">50%</span>
+        </div>
+        
+        <div class="playlist" id="playlist">
+            <h4>Playlist</h4>
+            <div class="playlist-item active" data-song="0">
+                <strong>Demo Song</strong> - Demo Artist
+            </div>
+            <div class="playlist-item" data-song="1">
+                <strong>Another Track</strong> - Another Artist
+            </div>
+            <div class="playlist-item" data-song="2">
+                <strong>Third Song</strong> - Third Artist
+            </div>
+        </div>
+        
+        <audio id="audioPlayer" preload="metadata">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
